@@ -10,6 +10,7 @@
 - **Industrial Strength Security**: AES-256-CBC encryption.
 - **Robust Key Derivation**: PBKDF2 with SHA-256 and 100,000 iterations.
 - **Modern CLI**: Beautiful text-based user interface powered by `Rich`.
+- **Secure Password Generator**: Built-in entropy-based generator for high-security vault passwords.
 - **Lightweight**: Zero fluff, just high-performance security.
 
 ## 🚀 Installation
@@ -25,12 +26,17 @@ pip install -r requirements.txt
 
 ## 🛠 Usage
 
-### Lock a File
+### 🎲 Generate a Secure Password
+```bash
+python -m nexus_vault.cli generate --length 32
+```
+
+### 🔒 Lock a File
 ```bash
 python -m nexus_vault.cli lock path/to/your/file.txt
 ```
 
-### Unlock a File
+### 🔓 Unlock a File
 ```bash
 python -m nexus_vault.cli unlock path/to/your/file.txt.nvlt
 ```
